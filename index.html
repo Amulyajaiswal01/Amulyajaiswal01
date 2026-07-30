@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ironclad Motors — Certified Second-Hand Cars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span class="logo-badge"><span>IC</span></span> Ironclad Motors</div>
+    <div class="nav-links">
+      <a href="#inventory">Inventory</a>
+      <a href="#process">How It Works</a>
+      <a href="#service">After-Sales</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Book a Test Drive</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Certified Pre-Owned Since 2014</div>
+      <h1>Every car passes a <em>150-point</em> inspection before it wears our badge.</h1>
+      <p class="lead">We sell thoroughly inspected second-hand cars — and back every sale with real after-sales service: free maintenance, genuine parts, and a team that still picks up the phone.</p>
+      <div class="btn-row">
+        <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+        <a href="#process" class="btn btn-ghost">See How We Certify</a>
+      </div>
+    </div>
+    <div class="sticker">
+      <img src="assets\creta.jpeg" alt="Hyundai Creta SX, certified pre-owned" class="sticker-img">
+      <div class="sticker-row"><span>Model</span><span>Hyundai Creta SX</span></div>
+      <div class="sticker-row"><span>Year</span><span>2022</span></div>
+      <div class="sticker-row"><span>Odometer</span><span>28,400 km</span></div>
+      <div class="sticker-row"><span>Fuel</span><span>Petrol</span></div>
+      <div class="sticker-row"><span>Owners</span><span>1st Owner</span></div>
+      <div class="sticker-row"><span>Inspection</span><span>150/150 Passed</span></div>
+      <div class="sticker-price">
+        <div class="amount">₹11.4 L</div>
+        <div class="label">ON-ROAD PRICE · WARRANTY INCLUDED</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip wrap" style="padding:0 32px;">
+  <div class="trust-item"><span class="num">01</span><span class="txt">150-Point Inspection on every car</span></div>
+  <div class="trust-item"><span class="num">02</span><span class="txt">1-Year Warranty, no fine print</span></div>
+  <div class="trust-item"><span class="num">03</span><span class="txt">Free Service for first 6 months</span></div>
+  <div class="trust-item"><span class="num">04</span><span class="txt">7-Day Money-Back Guarantee</span></div>
+</div>
+
+<section id="process">
+  <div class="wrap">
+    <div class="eyebrow">Our Process</div>
+    <h2 style="font-size:clamp(28px,3.5vw,40px);">From Inspection To Your Driveway</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="stage">STAGE 01</div>
+        <h3>Inspect</h3>
+        <p>Every car undergoes a 150-point mechanical, electrical and body check by certified technicians.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="step">
+        <div class="stage">STAGE 02</div>
+        <h3>Certify</h3>
+        <p>Only cars that clear inspection get the Ironclad badge, a full history report, and a fair price.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="step">
+        <div class="stage">STAGE 03</div>
+        <h3>Deliver</h3>
+        <p>RC transfer, insurance and paperwork handled for you. Drive away the same day, fully documented.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="step">
+        <div class="stage">STAGE 04</div>
+        <h3>Support</h3>
+        <p>Free servicing, genuine parts and a direct line to our team for as long as you own the car.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inventory">
+  <div class="wrap">
+    <div class="inv-head">
+      <div>
+        <div class="eyebrow">Current Stock</div>
+        <h2 style="font-size:clamp(28px,3.5vw,40px);">Inspected. Certified. Ready to Drive.</h2>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="suv">SUV</button>
+        <button class="filter-btn" data-filter="sedan">Sedan</button>
+        <button class="filter-btn" data-filter="hatchback">Hatchback</button>
+      </div>
+    </div>
+
+    <div class="car-grid" id="carGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<section id="service" class="service-section">
+  <div class="wrap">
+    <div class="eyebrow">After You Buy</div>
+    <h2 style="font-size:clamp(28px,3.5vw,40px);">Service Doesn't End At The Sale</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">✓</div>
+        <h3>Free Servicing</h3>
+        <p>Two complimentary services within the first 6 months, at our workshop or yours.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Genuine Parts Only</h3>
+        <p>No third-party substitutes — every replacement part is sourced from authorized suppliers.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡</div>
+        <h3>1-Year Warranty</h3>
+        <p>Engine, transmission and electricals covered. Claims processed within 48 hours.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☎</div>
+        <h3>24/7 Roadside Help</h3>
+        <p>Breakdown, flat tyre, or dead battery — one call and help is on the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Customer Reviews</div>
+    <h2 style="text-align:center; font-size:clamp(28px,3.5vw,40px);">What Owners Say</h2>
+    <div class="testi-wrap" id="testiWrap">
+      <div class="testi active">
+        <p>"Bought a Creta from Ironclad last year. The free servicing actually happened, twice, no upselling. That alone earned my trust."</p>
+        <div class="who">— ROHIT SHARMA, KANPUR</div>
+      </div>
+      <div class="testi">
+        <p>"I was nervous about buying second-hand, but the inspection report showed me exactly what I was paying for. No surprises."</p>
+        <div class="who">— PRIYA MEHTA, LUCKNOW</div>
+      </div>
+      <div class="testi">
+        <p>"Their team picked up my call at 11pm when my battery died. Genuinely didn't expect that kind of after-sales support."</p>
+        <div class="who">— ANKIT VERMA, KANPUR</div>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Get In Touch</div>
+    <h2 style="font-size:clamp(28px,3.5vw,40px);">Book A Test Drive Or Ask A Question</h2>
+    <div class="contact-grid">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required placeholder="10-digit mobile number">
+        </div>
+        <div class="form-group">
+          <label for="interest">Interested In</label>
+          <select id="interest">
+            <option>Buying a car</option>
+            <option>Selling my car</option>
+            <option>Service / warranty query</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Enquiry</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-row">
+          <div class="ico">📍</div>
+          <div>
+            <h4>Showroom Address</h4>
+            <p>Ironclad Motors, GT Road, Kanpur, Uttar Pradesh</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">☎</div>
+          <div>
+            <h4>Call Us</h4>
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">✉</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:hello@ironcladmotors.in">hello@ironcladmotors.in</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">🕐</div>
+          <div>
+            <h4>Showroom Hours</h4>
+            <div class="hours-table">
+              <div><span>Mon – Sat</span><span>10:00 AM – 8:00 PM</span></div>
+              <div><span>Sunday</span><span>11:00 AM – 6:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="logo" style="font-size:16px;"><span class="logo-badge" style="width:24px;height:24px;font-size:10px;"><span>IC</span></span> Ironclad Motors</div>
+    <div class="foot-links">
+      <a href="#inventory">Inventory</a>
+      <a href="#service">After-Sales</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="foot-copy">© 2026 Ironclad Motors. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
